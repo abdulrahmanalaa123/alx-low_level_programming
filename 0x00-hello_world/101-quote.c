@@ -1,4 +1,5 @@
-#include <stdlib.h>
+#include <unistd.h>
+#include <string.h>
 /**
  *Description: main - description for task.
  *
@@ -6,6 +7,8 @@
  */
 int main(void)
 {
-	system("echo 'and that piece of art is useful\"- Dora Korpar, 2015-10-19\n'");
+	char s[] = "and that piece of art is useful\"- Dora Korpar, 2015-10-19\n";
+
+	write(1, s, sizeof(s));
 	return (1);
 }
