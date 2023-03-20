@@ -14,6 +14,7 @@ int main(void)
 			{
 				putchar(48 + i);
 				putchar(48 + j);
+				puthcar(48 + k);
 
 				if (i == 8 && j == 9)
 					continue;
