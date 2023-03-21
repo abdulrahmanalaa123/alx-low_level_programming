@@ -2,6 +2,6 @@
 #define MAIN_H
 #include <stdio.h>
 
-int _putchar(c);
+int _putchar(char c);
 
 #endif
