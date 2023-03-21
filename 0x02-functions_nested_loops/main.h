@@ -4,3 +4,4 @@
 
 int _putchar(c);
 
+#endif
