@@ -6,7 +6,7 @@
  */
 int main(void)
 {
-	long unsigned int i;
+	unsigned long int i;
 	char s[] = "_putchar";
 
 	for (i = 0; i < sizeof(s); i++)
