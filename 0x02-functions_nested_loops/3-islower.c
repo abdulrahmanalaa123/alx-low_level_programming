@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- *Description: islower - description for task.
+ *Description: _islower - description for task.
  *@c: the character to be checker
  *Return: 0 as a default return value
  */
