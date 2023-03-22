@@ -1,12 +1,17 @@
 #include "main.h"
 /**
- *Description: main - description for task.
+ *Description: print_alphabet - description for task.
  *
  *Return: 0 as a default return value
  */
-int main(void)
+void print_alphabet(void)
 {
-	print_alphabet();
+	char c;
+
+	for (c = 'a'; c < 'z'; c++)
+		_putchar(c);
+
+	_putchar('\n');
 
 	return (0);
 }
