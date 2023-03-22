@@ -6,10 +6,9 @@
  */
 int main(void)
 {
-	int len;
-	char s[] = "trying testing"
-	len = sizeof(s)/sizeof(s[0]);
-       	printf(len);
-	printf(sizeof(s));	
+	char s[] = "trying testing";
+	int len = sizeof(s)/sizeof(s[0]);
+       	printf("%d\n",len);
+	printf("%lu\n",sizeof(s));	
 	return (0);
 }
