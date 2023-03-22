@@ -21,7 +21,7 @@ void times_table(void)
 			_putchar(',');
 			_putchar(' ');
 			if (k >= 10)
-				continue
+				continue;
 			_putchar(' ');
 		}
 		_putchar('\n');
