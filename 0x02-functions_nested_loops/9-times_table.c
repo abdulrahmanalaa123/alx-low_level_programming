@@ -18,6 +18,8 @@ void times_table(void)
 			if (k >= 10)
 				_putchar(48 + k / 10);
 			_putchar(48 + k % 10);
+			if (j == 9)
+				continue;
 			_putchar(',');
 			_putchar(' ');
 			if (k >= 10)
