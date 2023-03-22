@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  *Description: _abs - description for task.
- *@int : number
+ *@c : number
  *Return: 0 as a default return value
  */
 int _abs(int c)
