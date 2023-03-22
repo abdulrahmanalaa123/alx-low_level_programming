@@ -4,7 +4,7 @@
  *@c: the character to be checker
  *Return: 0 as a default return value
  */
-int islower(int c)
+int _islower(int c)
 {
 	if (c >= 97 && c <= 122)
 		return (1);
