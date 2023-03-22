@@ -8,8 +8,8 @@ int main(void)
 {
 	unsigned long int i;
 	char s[] = "_putchar";
-	_putchar(s[sizeof(s)/sizeof(s[0])]);
-	for (i = 0; i < (sizeof(s) / sizeof(s[0])); i++)
+
+	for (i = 0; i < ((sizeof(s) / sizeof(s[0])) - 1); i++)
 		_putchar(s[i]);
 
 	_putchar('\n');
