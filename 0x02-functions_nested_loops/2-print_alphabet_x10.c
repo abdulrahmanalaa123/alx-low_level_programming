@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- *Description: main - description for task.
+ *Description: print_alphabet_x10 - description for task.
  *
  *Return: 0 as a default return value
  */
