@@ -24,8 +24,8 @@ void print_times_table(int n)
 			repeat = _log(k, 10);
 			for (m = 0; m < (_log((12 * 12), 10) - repeat); m++)
 				putchar(' ');
-			for (f = 0; f < _log(k); f++)
-				_putchar(48 + (k % _pow(10, f + 1)) / _pow(10, f)
+			for (f = 0; f < _log(k, 10); f++)
+				_putchar(48 + (k % _pow(10, f + 1)) / _pow(10, f))
 			if (j != 12)
 				_putchar(',');
 		}
