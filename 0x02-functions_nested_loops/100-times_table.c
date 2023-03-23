@@ -25,7 +25,7 @@ void print_times_table(int n)
 			for (m = 0; m < (_log((n * n), 10) - repeat); m++)
 				putchar(' ');
 			for (f = 0; f < _log(k, 10); f++)
-				_putchar(48 + (k % _pow(10, f + 1)) / _pow(10, f))
+				_putchar(48 + (k % _pow(10, f + 1)) / _pow(10, f));
 			if (j != n)
 				_putchar(',');
 		}
@@ -43,8 +43,10 @@ int _log(int a, int b)
 	int v;
 
 	while (a != 0)
+	{
 		a = a / b;
 		v++;
+	}
 
 	return (v);
 }
