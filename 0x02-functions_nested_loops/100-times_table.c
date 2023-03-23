@@ -14,6 +14,7 @@ void print_times_table(int n)
 	int k;
 	int m;
 	int f;
+	int repeat;
 
 	for (i = 0; i <= 12; i++)
 	{
