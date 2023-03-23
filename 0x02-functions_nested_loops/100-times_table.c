@@ -16,17 +16,17 @@ void print_times_table(int n)
 	int f;
 	int repeat;
 
-	for (i = 0; i <= 12; i++)
+	for (i = 0; i <= n; i++)
 	{
-		for (j = 0; j <= 12; j++)
+		for (j = 0; j <= n; j++)
 		{
 			k = i * j;
 			repeat = _log(k, 10);
-			for (m = 0; m < (_log((12 * 12), 10) - repeat); m++)
+			for (m = 0; m < (_log((n * n), 10) - repeat); m++)
 				putchar(' ');
 			for (f = 0; f < _log(k, 10); f++)
 				_putchar(48 + (k % _pow(10, f + 1)) / _pow(10, f))
-			if (j != 12)
+			if (j != n)
 				_putchar(',');
 		}
 		_putchar('\n');
