@@ -6,8 +6,14 @@
  */
 void print_to_98(int n)
 {
+	int k;
+
 	while (n != 98)
 	{
+		int k = n;
+		while(k != 0)
+			_putchar(48 + k / 10);
+			k = k / 10;
 		if (n >= 10)
 			_putchar(48 + n / 10);
 		_putchar(48 + n % 10);
