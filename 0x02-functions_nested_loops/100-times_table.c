@@ -40,7 +40,7 @@ void print_times_table(int n)
  */
 int _log(int a, int b)
 {
-	int v;
+	int v = 0;
 
 	while (a != 0)
 	{
