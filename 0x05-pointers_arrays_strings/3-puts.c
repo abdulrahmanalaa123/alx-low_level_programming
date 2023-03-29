@@ -5,6 +5,6 @@
  */
 void _puts(char *str)
 {
-	while (*++s)
-		_putchar(s);
+	while (*++str)
+		_putchar(str);
 }
