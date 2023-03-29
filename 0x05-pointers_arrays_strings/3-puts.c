@@ -3,7 +3,7 @@
  *Description: _puts - description for task.
  *@str: string
  */
-void _puts(chat *str)
+void _puts(char *str)
 {
 	while (*++s)
 		_putchar(s);
