@@ -4,7 +4,7 @@
  *@dest: string to append to
  *@src: string to be appended
  *@n: integer limiting append function
- *Return: 0 as a default return value
+ *Return: string as a default return value
  */
 char *_strncat(char *dest, char *src, int n)
 {
