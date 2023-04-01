@@ -9,8 +9,9 @@ int main(void)
 {
 	char string[] = "hello";
 	char string2[] = "andappended";
-
-	printf("%s\n",_strcat(string,string2));
+	printf("%p\n",string);
+	char *ptr = _strncpy(string,string2,50);
+	printf("%s and address of: %p\n",string2,ptr);
 	return (0);
 }
 
@@ -53,5 +54,25 @@ char *_strncat(char *dest, char *src, int n)
 		src++;
 	}
 	*dest = '\0';
+	return (ptr);
+}
+char *_strncpy(char *dest, char *src, int n)
+{
+	char *ptr;
+	int i;
+
+	ptr = dest;
+	for (i = 0; i < n && *(src + i); i++)
+	{
+		printf("%p\n",dest);
+		*dest = *(src + i);
+		dest++;
+	}
+	while (i < n)
+	{
+		*dest = '\0';
+		i++;
+		dest++;
+	}
 	return (ptr);
 }

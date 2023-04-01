@@ -1,23 +1,26 @@
 #include "main.h"
+
 /**
- *Description: _strncpy - description for task.
- *@dest: string to append to
- *@src: string to be appended
- *@n: integer limiting append function
- *Return: string as a default return value
+ *_strncpy - function that copies a string
+ *
+ * @src: The source of strings
+ * @dest: The destination of the string
+ * @n: The length of int
+ *
+ * Return: pointer to the resulting string dest
  */
 char *_strncpy(char *dest, char *src, int n)
 {
-	char *ptr;
-	int i;
+int i;
 
-	ptr = dest;
-	for (i = 0; i < n && *src; i++)
+	for (i = 0; i < n && *(src + i); i++)
 	{
-		*dest = *src;
-		dest++;
-		src++;
+		*(dest + i) = *(src + i);
 	}
-	*dest = '\0';
-	return (ptr);
+	for (; i < n; i++)
+	{
+	*(dest + i) = '\0';
+	}
+	return (dest);
+
 }
