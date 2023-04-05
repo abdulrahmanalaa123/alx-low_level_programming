@@ -11,7 +11,7 @@ int main(void)
 	char b = '5';
 	char s[] = "hello and this is a test string";
 	
-	printf("%s\n",_memset(s,b,15));
+	printf("%s\n",_memset(s,b,5));
 	return (0);
 }
 
@@ -23,8 +23,7 @@ char *_memset(char *s, char b, unsigned int n)
 	p = s;
 	for (i = 0; i < n; i++)
 	{
-		*s = b;
-		s ++;
+		s[i] = b;
 	}
 
 	return(p);
