@@ -19,18 +19,25 @@ int main(int argc, char *argv[])
 	repet = 0;
 	k = atoi(argv[1]);
 	i = 0;
-	if (argc > 2)
+	if (argc != 2)
 	{
 		printf("Error\n");
 		return (1);
 	}
-	while (k != 0 && i < 5)
+	if (k < 0)
 	{
-		univ = k / j[i];
-		k = k % j[i];
-		repet += univ;
-		i++;
+		printf("0\n");
 	}
-	printf("%d\n", repet);
+	else
+	{
+		while (k != 0 && i < 5)
+		{
+			univ = k / j[i];
+			k = k % j[i];
+			repet += univ;
+			i++;
+		}
+		printf("%d\n", repet);
+	}
 	return (0);
 }
