@@ -14,32 +14,22 @@ int main(int argc, char *argv[])
 	int i;
 	int repet;
 	int univ;
-	int j[] = {25, 10, 5, 2};
+	int j[] = {25, 10, 5, 2, 1};
 
 	repet = 0;
-	k = atoi(argv[1]) * 100;
+	k = atoi(argv[1]);
 	i = 0;
 	if (argc > 2)
 	{
 		printf("Error\n");
 		return (1);
 	}
-	while (k != 0)
+	while (k != 0 && i < 5)
 	{
 		univ = k / j[i];
-		if (k % j[i] == 0)
-		{
-			repet = repet + univ;
-			/*decalring with 0 instead of break*/
-			k = 0;
-			break;
-		}
-		else
-		{
-			k = k - (j[i] * univ);
-			repet = repet + univ;
-			i++;
-		}
+		k = k % j[i];
+		repet += univ;
+		i++;
 	}
 	printf("%d\n", repet);
 	return (0);
