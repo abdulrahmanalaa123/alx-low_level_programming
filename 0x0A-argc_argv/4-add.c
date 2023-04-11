@@ -57,7 +57,7 @@ int _atoi(char *str)
 	}
 	for (; str[i] != '\0';  i++)
 	{
-		if ( (str[i]-'0') > 9)
+		if ((str[i] - '0') > 9)
 			return (-938);
 		res = (res * 10) + (str[i] - '0');
 	}
