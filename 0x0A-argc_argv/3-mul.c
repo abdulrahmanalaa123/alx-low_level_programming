@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 /**
  *Description: main - description for task.
  *
@@ -17,11 +18,14 @@ int main(int argc, char *argv[])
 
 	int mult;
 	int i;
+	int k;
 
 	mult = 1;
-	for (i = 0; i < argc; i++)
-		mult = mult * argv[i];
-
+	for (i = 1; i < argc; i++)
+	{
+		k = atoi(argv[i]);
+		mult = mult * k;
+	}
 	printf("%d\n", mult);
 	return (0);
 }
