@@ -11,23 +11,28 @@ int _atoi(char *str);
  */
 int main(int argc, char *argv[])
 {
-	int mult;
+	int sum;
 	int i;
 	int k;
 
-	if (argc < 3)
+	if (argc < 2)
 	{
-		printf("Error\n");
-		return (1);
+		printf("0\n");
+		return (0);
 	}
 
-	mult = 1;
+	sum = 0;
 	for (i = 1; i < argc; i++)
 	{
 		k = _atoi(argv[i]);
-		mult = mult * k;
+		if (k == -938)
+		{
+			printf("Error\n");
+			return (1);
+		}
+		sum  = sum + k;
 	}
-	printf("%d\n", mult);
+	printf("%d\n", sum);
 	return (0);
 }
 /**
@@ -52,6 +57,8 @@ int _atoi(char *str)
 	}
 	for (; str[i] != '\0';  i++)
 	{
+		if ( (str[i]-'0') > 9)
+			return (-938);
 		res = (res * 10) + (str[i] - '0');
 	}
 	return (res * sign);
