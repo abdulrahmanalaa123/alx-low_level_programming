@@ -9,17 +9,19 @@
  */
 int main(int argc, char *argv[])
 {
-	int i;
-	int mult;
-
-	if (argc < 2)
+	if (argc < 3)
 	{
 		printf("Error\n");
 		return (1);
 	}
 
+	int mult;
+	int i;
+
 	mult = 1;
 	for (i = 0; i < argc; i++)
 		mult = mult * argv[i];
+
+	printf("%d\n", mult);
 	return (0);
 }
