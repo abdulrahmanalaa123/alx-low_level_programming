@@ -9,13 +9,14 @@
  */
 int main(int argc, char *argv[])
 {
+	int i;
+	int mult;
+
 	if (argc < 2)
 	{
 		printf("Error\n");
 		return (1);
 	}
-	int i;
-	int mult;
 
 	mult = 1;
 	for (i = 0; i < argc; i++)
