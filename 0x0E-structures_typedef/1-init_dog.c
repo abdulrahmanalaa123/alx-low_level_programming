@@ -1,4 +1,4 @@
-#include "main.h"
+#include "dog.h"
 /**
  *Description: init_dog - description for task.
  *@d: the object
