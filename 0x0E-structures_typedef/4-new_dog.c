@@ -1,4 +1,4 @@
-#include "main.h"
+#include "dog.h"
 /**
  *Description: new_dog - description for task.
  *@name: name of dog
